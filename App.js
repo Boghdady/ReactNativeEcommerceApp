@@ -6,7 +6,13 @@ import { AppButton } from './src/components/AppButton';
 const App: () => React$Node = () => {
   return (
     <View style={styles.container}>
-      <AppButton title="DONE" onPress={alert('hi')} />
+      <AppButton
+        title="DONE"
+        isLoading={false}
+        onPress={() => {
+          alert('hi');
+        }}
+      />
     </View>
   );
 };
